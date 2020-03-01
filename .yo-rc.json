@@ -1,0 +1,43 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.homeapp.app",
+      "nativeLanguage": "fr"
+    },
+    "jhipsterVersion": "6.7.1",
+    "applicationType": "monolith",
+    "baseName": "HomeAutomation",
+    "packageName": "com.homeapp.app",
+    "packageFolder": "com/homeapp/app",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "redis",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "MTdhZWE0ZjQ1ZGI5ZTEyMjAxMjg0NmVkOTZmNGZkY2Y3OWIxZWZiYmJkNTZiNWU4OWQ1MzE2ZWU0NTk2MDM3NDZmNGNjNTFjNjhmMzVkYzdjNzA3ZjJiMmMxMjNjNWZlMDZjZDJhOWZkYjRhM2MyMDA5ZTA0Y2M1YTEzYjY1Y2U=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "darkly",
+    "clientThemeVariant": "light",
+    "creationTimestamp": 1583095148390,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "fr",
+    "languages": ["fr", "en"],
+    "blueprints": []
+  }
+}
