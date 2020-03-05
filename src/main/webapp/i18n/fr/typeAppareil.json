@@ -1,0 +1,22 @@
+{
+  "homeAutomationApp": {
+    "typeAppareil": {
+      "home": {
+        "title": "TypeAppareils",
+        "createLabel": "Créer un nouveau Type Appareil",
+        "createOrEditLabel": "Créer ou éditer un Type Appareil",
+        "notFound": "Aucun Type Appareil trouvé"
+      },
+      "created": "Un nouveau Type Appareil a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Type Appareil avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Type Appareil avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Type Appareil {{ id }} ?"
+      },
+      "detail": {
+        "title": "Type Appareil"
+      },
+      "name": "Name"
+    }
+  }
+}

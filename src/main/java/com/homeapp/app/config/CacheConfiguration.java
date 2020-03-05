@@ -49,6 +49,13 @@ public class CacheConfiguration {
             createCache(cm, com.homeapp.app.domain.User.class.getName(), jcacheConfiguration);
             createCache(cm, com.homeapp.app.domain.Authority.class.getName(), jcacheConfiguration);
             createCache(cm, com.homeapp.app.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            createCache(cm, com.homeapp.app.domain.Piece.class.getName(), jcacheConfiguration);
+            createCache(cm, com.homeapp.app.domain.TypeAppareil.class.getName(), jcacheConfiguration);
+            createCache(cm, com.homeapp.app.domain.MqttConnection.class.getName(), jcacheConfiguration);
+            createCache(cm, com.homeapp.app.domain.Appareil.class.getName(), jcacheConfiguration);
+            createCache(cm, com.homeapp.app.domain.Appareil.class.getName() + ".idPieces", jcacheConfiguration);
+            createCache(cm, com.homeapp.app.domain.Appareil.class.getName() + ".typeAppareils", jcacheConfiguration);
+            createCache(cm, com.homeapp.app.domain.Appareil.class.getName() + ".protocolTypes", jcacheConfiguration);
             // jhipster-needle-redis-add-entry
         };
     }

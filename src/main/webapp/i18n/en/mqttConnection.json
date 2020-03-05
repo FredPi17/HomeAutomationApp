@@ -1,0 +1,27 @@
+{
+  "homeAutomationApp": {
+    "MQTTConnection": {
+      "home": {
+        "title": "MQTT Connections",
+        "createLabel": "Create a new MQTT Connection",
+        "createOrEditLabel": "Create or edit a MQTT Connection",
+        "notFound": "No MQTT Connections found"
+      },
+      "created": "A new MQTT Connection is created with name {{ name }}",
+      "updated": "A MQTT Connection is updated",
+      "deleted": "A MQTT Connection is deleted",
+      "delete": {
+        "question": "Are you sure you want to delete MQTT Connection {{ name }}?"
+      },
+      "detail": {
+        "title": "MQTT Connection"
+      },
+      "name": "Name",
+      "urlServeur": "Server URL",
+      "port": "Port",
+      "username": "Username",
+      "password": "Password",
+      "topic": "Topic"
+    }
+  }
+}
