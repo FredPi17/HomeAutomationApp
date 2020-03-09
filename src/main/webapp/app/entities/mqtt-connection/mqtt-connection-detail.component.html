@@ -1,0 +1,50 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="mqttConnection">
+            <h2><span jhiTranslate="homeAutomationApp.mqttConnection.detail.title">Mqtt Connection</span> {{ mqttConnection.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="homeAutomationApp.mqttConnection.name">Name</span></dt>
+                <dd>
+                    <span>{{ mqttConnection.name }}</span>
+                </dd>
+                <dt><span jhiTranslate="homeAutomationApp.mqttConnection.urlServeur">Url Serveur</span></dt>
+                <dd>
+                    <span>{{ mqttConnection.urlServeur }}</span>
+                </dd>
+                <dt><span jhiTranslate="homeAutomationApp.mqttConnection.port">Port</span></dt>
+                <dd>
+                    <span>{{ mqttConnection.port }}</span>
+                </dd>
+                <dt><span jhiTranslate="homeAutomationApp.mqttConnection.username">Username</span></dt>
+                <dd>
+                    <span>{{ mqttConnection.username }}</span>
+                </dd>
+                <dt><span jhiTranslate="homeAutomationApp.mqttConnection.password">Password</span></dt>
+                <dd>
+                    <span>{{ mqttConnection.password }}</span>
+                </dd>
+                <dt><span jhiTranslate="homeAutomationApp.mqttConnection.topic">Topic</span></dt>
+                <dd>
+                    <span>{{ mqttConnection.topic }}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/mqtt-connection', mqttConnection.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

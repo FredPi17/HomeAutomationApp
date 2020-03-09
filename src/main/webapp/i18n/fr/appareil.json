@@ -1,0 +1,25 @@
+{
+  "homeAutomationApp": {
+    "appareil": {
+      "home": {
+        "title": "Appareils",
+        "createLabel": "Créer un nouveau Appareil",
+        "createOrEditLabel": "Créer ou éditer un Appareil",
+        "notFound": "Aucun Appareil trouvé"
+      },
+      "created": "Un nouveau Appareil a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Appareil avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Appareil avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Appareil {{ id }} ?"
+      },
+      "detail": {
+        "title": "Appareil"
+      },
+      "name": "Name",
+      "type": "Type",
+      "protocol": "Protocol",
+      "piece": "Piece"
+    }
+  }
+}

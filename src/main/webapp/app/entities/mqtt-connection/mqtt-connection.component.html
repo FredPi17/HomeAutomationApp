@@ -1,0 +1,71 @@
+<div>
+    <h2 id="page-heading">
+        <span jhiTranslate="homeAutomationApp.mqttConnection.home.title">Mqtt Connections</span>
+
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-mqtt-connection" [routerLink]="['/mqtt-connection/new']">
+            <fa-icon icon="plus"></fa-icon>
+            <span  jhiTranslate="homeAutomationApp.mqttConnection.home.createLabel">
+            Create a new Mqtt Connection
+            </span>
+        </button>
+    </h2>
+
+    <jhi-alert-error></jhi-alert-error>
+
+    <jhi-alert></jhi-alert>
+
+    <div class="alert alert-warning" id="no-result" *ngIf="mqttConnections?.length === 0">
+        <span jhiTranslate="homeAutomationApp.mqttConnection.home.notFound">No mqttConnections found</span>
+    </div>
+
+    <div class="table-responsive" id="entities" *ngIf="mqttConnections?.length > 0">
+        <table class="table table-striped" aria-describedby="page-heading">
+            <thead>
+                <tr>
+                    <th scope="col" ><span jhiTranslate="global.field.id">ID</span></th>
+                    <th scope="col" ><span jhiTranslate="homeAutomationApp.mqttConnection.name">Name</span></th>
+                    <th scope="col" ><span jhiTranslate="homeAutomationApp.mqttConnection.urlServeur">Url Serveur</span></th>
+                    <th scope="col" ><span jhiTranslate="homeAutomationApp.mqttConnection.port">Port</span></th>
+                    <th scope="col" ><span jhiTranslate="homeAutomationApp.mqttConnection.username">Username</span></th>
+                    <th scope="col" ><span jhiTranslate="homeAutomationApp.mqttConnection.password">Password</span></th>
+                    <th scope="col" ><span jhiTranslate="homeAutomationApp.mqttConnection.topic">Topic</span></th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let mqttConnection of mqttConnections ;trackBy: trackId">
+                    <td><a [routerLink]="['/mqtt-connection', mqttConnection.id, 'view']">{{ mqttConnection.id }}</a></td>
+                    <td>{{ mqttConnection.name }}</td>
+                    <td>{{ mqttConnection.urlServeur }}</td>
+                    <td>{{ mqttConnection.port }}</td>
+                    <td>{{ mqttConnection.username }}</td>
+                    <td>{{ mqttConnection.password }}</td>
+                    <td>{{ mqttConnection.topic }}</td>
+                    <td class="text-right">
+                        <div class="btn-group">
+                            <button type="submit"
+                                    [routerLink]="['/mqtt-connection', mqttConnection.id, 'view']"
+                                    class="btn btn-info btn-sm">
+                                <fa-icon icon="eye"></fa-icon>
+                                <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                            </button>
+
+                            <button type="submit"
+                                    [routerLink]="['/mqtt-connection', mqttConnection.id, 'edit']"
+                                    class="btn btn-primary btn-sm">
+                                <fa-icon icon="pencil-alt"></fa-icon>
+                                <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                            </button>
+
+                            <button type="submit" (click)="delete(mqttConnection)"
+                                    class="btn btn-danger btn-sm">
+                                <fa-icon icon="times"></fa-icon>
+                                <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

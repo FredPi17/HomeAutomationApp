@@ -1,0 +1,27 @@
+{
+  "homeAutomationApp": {
+    "mqttConnection": {
+      "home": {
+        "title": "Connexions MQTT",
+        "createLabel": "Créer une connexion MQTT",
+        "createOrEditLabel": "Créer ou éditer une connexion MQTT",
+        "notFound": "Aucune connexion MQTT trouvée"
+      },
+      "created": "Une connexion MQTT a été créé",
+      "updated": "La connexion MQTT a été mise à jour",
+      "deleted": "La connexion MQTT avec l'identifiant {{ name }} a été supprimée",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer la connexion MQTT {{ name }} ?"
+      },
+      "detail": {
+        "title": "Connexion MQTT"
+      },
+      "name": "Nom",
+      "urlServeur": "URL du Serveur",
+      "port": "Port",
+      "username": "Utilisateur",
+      "password": "Mot de passe",
+      "topic": "Topic"
+    }
+  }
+}
